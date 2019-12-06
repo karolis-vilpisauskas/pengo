@@ -1,7 +1,7 @@
 {
-  "name": "web-bluetooth-terminal",
-  "version": "1.3.3",
-  "description": "Progressive Web Application for serial communication with your own Bluetooth Low Energy (Smart) devices",
+  "name": "Pengo",
+  "version": "1.0.0",
+  "description": "Progressive Web Application for controlling Pengo bot",
   "bin": "./cli.js",
   "scripts": {
     "build": "npm run js:vendor && npm run styles:vendor && npm run styles",
@@ -11,28 +11,7 @@
     "styles:vendor": "cpx \"node_modules/normalize.css/normalize.css\" css",
     "watch:styles": "nodemon -e scss -x \"npm run styles\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/loginov-rocks/Web-Bluetooth-Terminal.git"
-  },
-  "keywords": [
-    "arduino",
-    "ble",
-    "bluetooth",
-    "bluetooth-low-energy",
-    "bluetooth-smart",
-    "communication",
-    "iot",
-    "physical-web",
-    "pwa",
-    "terminal",
-    "serial"
-  ],
-  "author": "Danila Loginov <danila@loginov.rocks> (https://loginov.rocks)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/loginov-rocks/Web-Bluetooth-Terminal/issues"
-  },
   "homepage": "https://karolis-vilpisauskas.github.io/pengo/",
   "dependencies": {
     "git-clone": "^0.1.0"
