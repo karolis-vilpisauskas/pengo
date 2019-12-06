@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/loginov-rocks/Web-Bluetooth-Terminal/issues"
   },
-  "homepage": "https://loginov-rocks.github.io/Web-Bluetooth-Terminal",
+  "homepage": "https://karolis-vilpisauskas.github.io/pengo/",
   "dependencies": {
     "git-clone": "^0.1.0"
   },
