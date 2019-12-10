@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run js:vendor && npm run styles:vendor && npm run styles",
     "js:vendor": "cpx \"node_modules/sw-toolbox/*.js\" js && cpx \"node_modules/bluetooth-terminal/src/*.js\" js",
-    "lint": "eslint cli.js sw.js js/main.js",
+    "lint": "eslint sw.js js/main.js",
     "styles": "node-sass -o css scss",
     "styles:vendor": "cpx \"node_modules/normalize.css/normalize.css\" css",
     "watch:styles": "nodemon -e scss -x \"npm run styles\""

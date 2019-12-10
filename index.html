@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -11,9 +12,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="msapplication-starturl" content="./">
     <meta name="description"
-          content="Progressive Web Application for serial communication with your own Bluetooth Low Energy (Smart) devices">
+        content="Progressive Web Application for serial communication with your own Bluetooth Low Energy (Smart) devices">
 
-    <title>Web Bluetooth Terminal</title>
+    <title>Pengo</title>
 
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -28,16 +29,13 @@
     <link href="css/styles.css" rel="stylesheet">
 
 </head>
+
 <body>
 
     <div class="app">
-
-        <div class="toolbar">
-
-            <div id="device-name" class="name">Terminal</div>
-
+        <div class="header">
+            <h1>Pengo</h1>
             <div class="buttons">
-
                 <button id="connect" type="button" aria-label="Connect">
                     <i class="material-icons">bluetooth_connected</i>
                 </button>
@@ -45,38 +43,27 @@
                 <button id="disconnect" type="button" aria-label="Disconnect">
                     <i class="material-icons">bluetooth_disabled</i>
                 </button>
-
             </div>
-
-        </div>
-
-        <div id="terminal" class="terminal"></div>
-
-        <form id="send-form" class="send-form">
-
-            <input id="input" type="text" aria-label="Input" autocomplete="off" placeholder="Type something to send...">
-
-            <button type="submit" aria-label="Send">
-                <i class="material-icons">send</i>
-            </button>
-
-        </form>
-        <div class="header">
-            <h1>Pengo</h1>
         </div>
         <div class="movement-wrapper">
-            <button class="btn" type="button">FORWARD</button>
-            <button class="btn" type="button">BACK</button>
-            <button class="btn" type="button">LEFT</button>
-            <button class="btn type="button"">RIGHT</button>
+            <button class="btn" type="button" id="left" aria-label="Left">
+                <i class="material-icons">keyboard_arrow_left</i>
+            </button>
+            <div class="mid-wrapper">
+                <button class="btn" type="button" id="forward" aria-label="Forward">
+                    <i class="material-icons">keyboard_arrow_up</i>
+                </button>
+                <button class="btn" type="button" id="back" aria-label="Back">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </button>
+            </div>
+            <button class="btn" type="button" id="right" aria-label="Right">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </button>
         </div>
         <div class="action-wrapper">
-            <button class="btn" type="button">DANCE</button>
-            <button class="btn" type="button">LIFT RIGHT</button>
-            <button class="btn" type="button">LIFT LEFT</button>
+            <button class="btn" type="button" id="dance" aria-label="Dance">DANCE</button>
         </div>
-        
-
     </div>
 
     <script src="js/BluetoothTerminal.js"></script>
@@ -84,4 +71,5 @@
     <script src="js/companion.js" data-service-worker="sw.js"></script>
 
 </body>
+
 </html>
