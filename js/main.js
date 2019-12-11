@@ -31,27 +31,13 @@ disconnectButton.addEventListener("click", () => {
 // Walking events
 
 const holdEvent = (btn, action) => {
-  var t;
 
-  const repeat = () => {
+  btn.addEventListener("click", () => {
     action();
-    t = setTimeout(repeat, 1000);
-  };
-
-  btn.addEventListener("touchstart", () => {
-    repeat();
   });
 
-  btn.addEventListener("mousedown", () => {
-    repeat();
-  });
-
-  btn.addEventListener("touchend", () => {
-    clearTimeout(t);
-  });
-
-  btn.addEventListener("mouseup", () => {
-    clearTimeout(t);
+  btn.addEventListener("touchstart ", () => {
+    action();
   });
 }
 
