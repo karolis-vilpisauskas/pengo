@@ -21,7 +21,7 @@
     "cpx": "^1.5.0",
     "eslint": "^5.14.1",
     "eslint-config-google": "^0.12.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.10",
     "normalize.css": "^8.0.1",
     "sw-toolbox": "^3.6.0"
